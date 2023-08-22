@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {MdOutlineClose} from 'react-icons/md'
 import {BsFillEmojiSmileFill} from 'react-icons/bs'
+import {BsHandbagFill} from 'react-icons/bs'
 
 function Navbar() {
     const [display, setDisplay]=useState('hidden');
@@ -16,7 +17,7 @@ function Navbar() {
   return (
     <>
     <div className='shadow-2xl ticky top-0 sticky bg-white'>
-        <div className='relative mx-10 md:mx-20 font-Aclonica'>
+        <div className='relative mx-10 lg:mx-20 font-Aclonica'>
              <div className='flex justify-between py-4 '>
                 <div className='flex text-4xl font-extrabold space-x-1'>
                     <BsFillEmojiSmileFill className='text-[#f87171]'/>
@@ -26,9 +27,8 @@ function Navbar() {
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/contact">Contact</Link>
-                    <Link to="/hero">Hero</Link>
+                    <BsHandbagFill className='text-3xl'/>
                     <button className='bg-black text-white px-6 p-1'>Login</button>
-                    <button className='bg-black text-white px-6 p-1'>Sign Up</button>
                 </div>
     
                 {display==='hidden'?   <GiHamburgerMenu className='text-3xl md:hidden block' onClick={clickHandle}/> : <MdOutlineClose      className='text-3xl md:hidden block' onClick={clickHandle}/>}
@@ -38,7 +38,7 @@ function Navbar() {
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/contact">Contact</Link>
-                    <Link to="/hero">Hero</Link>
+                    <BsHandbagFill className='text-4xl' />
                     <button className='bg-white rounded-sm text-black px-6 p-1'>Login</button>
                 </div>
              </div>
