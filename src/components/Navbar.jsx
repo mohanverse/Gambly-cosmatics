@@ -6,7 +6,6 @@ import {MdOutlineClose} from 'react-icons/md'
 import {BsFillEmojiSmileFill} from 'react-icons/bs'
 import {BsHandbagFill} from 'react-icons/bs'
 import {BiSolidUser} from 'react-icons/bi'
-import Choice from './Choise'
 
 
 function Navbar() {
@@ -21,7 +20,7 @@ function Navbar() {
   return (
     <>
     <div className='shadow-2xl ticky top-0 sticky bg-white'>
-        <div className='relative   font-Aclonica'>
+        <div className='relative px-10  font-Aclonica'>
              <div className='flex justify-between py-4 '>
                 <div className='flex text-4xl font-extrabold space-x-1'>
                     <BsFillEmojiSmileFill className='text-[#f87171]'/>
@@ -49,8 +48,19 @@ function Navbar() {
                 </div>
              </div>
         </div>
+        <div className='md:block h-16'>
+            <div className='flex justify-between px-8 md:px-28 py-4 text-base text-white font-bold bg-black md:space-x-4 space-x-12 overflow-x-scroll scrollbar-hide h-full '>
+              <Link className='md:w-32 w-24' to="/">Eyes</Link>
+              <Link className='md:w-32 w-24' to="/">Lipstick</Link>
+              <Link className='md:w-32 w-24' to="/">Perfume</Link>
+              <Link className='md:w-32 w-24' to="/">Skin</Link>
+              <Link className='md:w-32 w-24' to="/">Cream</Link>
+              <Link className='md:w-32 w-24' to="/">FaceOil</Link>
+              <Link className='md:w-32 w-24' to="/">HairOil</Link>
+              <Link className='md:w-32 w-24' to="/">FaceCream</Link>
+            </div>
+       </div>
     </div>
-    <Choice/>
     </>
   )
 }
