@@ -2,8 +2,9 @@
 import React, { useState, useEffect } from "react";
 
 function Card() {
+
     //https://makeup-api.herokuapp.com/api/v1/products.json?product_category=cream&product_type=foundation
-  const url = "";
+  const url = "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=cream&product_type=foundation";
   const [data, setData] = useState([]);
 
   const fetchInfo = () => {
