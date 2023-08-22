@@ -1,14 +1,12 @@
-
 import React, { useState, useEffect } from "react";
 
 function Card() {
 
-    //https://makeup-api.herokuapp.com/api/v1/products.json?product_category=cream&product_type=foundation
-  const url = "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=cream&product_type=foundation";
+  const ApiKey='https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'
   const [data, setData] = useState([]);
 
   const fetchInfo = () => {
-    return fetch(url)
+    return fetch(ApiKey)
       .then((res) => res.json())
       .then((d) => setData(d))
   }
@@ -24,11 +22,15 @@ function Card() {
     {data.map((data) => {
         return (
           <div className="flex justify-center border py-10 px-5">
-            <div className="h-96">
-                <img className="w-60" src={data.image_link} alt="img" />
-                <h1 className="text-xl font-md">{data.name}</h1>
-                <h1 className="text-xl font-md">{data.rating}</h1>
-                <h1 className="text-xl font-md">{}</h1>
+            <div className="h-[400px]">
+                <img className="w-52" src={data.image_link} alt="img" />
+                <div className="h-16">
+                    <h1 className="text-xl font-md">{data.name}</h1>
+                    <h1 className="text-xl font-md">{data.rating}</h1>
+                </div>
+                <div className="flex justify-center mt-10">
+                    <button className=" bg-black px-4 py-2 rounded-md text-white">Add to Card</button>
+                </div>
             </div>
           </div>
         );
