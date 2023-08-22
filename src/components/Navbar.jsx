@@ -5,6 +5,8 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 import {MdOutlineClose} from 'react-icons/md'
 import {BsFillEmojiSmileFill} from 'react-icons/bs'
 import {BsHandbagFill} from 'react-icons/bs'
+import {BiSolidUser} from 'react-icons/bi'
+
 
 function Navbar() {
     const [display, setDisplay]=useState('hidden');
@@ -27,7 +29,8 @@ function Navbar() {
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/contact">Contact</Link>
-                    <BsHandbagFill className='text-3xl'/>
+                    <Link to="/user"><BiSolidUser className='text-4xl'/></Link>
+                    <Link to="/card"><BsHandbagFill className='text-4xl' /></Link>
                     <button className='bg-black text-white px-6 p-1'>Login</button>
                 </div>
     
@@ -38,7 +41,8 @@ function Navbar() {
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/contact">Contact</Link>
-                    <BsHandbagFill className='text-4xl' />
+                    <Link><BiSolidUser className='text-3xl'/></Link>
+                    <Link><BsHandbagFill className='text-4xl' /></Link>
                     <button className='bg-white rounded-sm text-black px-6 p-1'>Login</button>
                 </div>
              </div>

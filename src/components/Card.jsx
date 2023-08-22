@@ -23,7 +23,7 @@ function Card() {
         return (
           <div className="flex justify-center border py-10 px-5">
             <div className="h-[400px]">
-                <img className="w-52" src={data.image_link} alt="img" />
+                <img className="w-52 ml-10" src={data.image_link} alt="img" />
                 <div className="h-16">
                     <h1 className="text-xl font-md">{data.name}</h1>
                     <h1 className="text-xl font-md">{data.rating}</h1>
