@@ -24,7 +24,7 @@ function Navbar() {
              <div className='flex px-8 justify-between py-4 '>
                 <div className='flex text-4xl font-extrabold space-x-1'>
                     <BsFillEmojiSmileFill className='text-[#f87171]'/>
-                    <a className='' href="">GamBly</a>
+                    <a className='' href=""> GamBly </a>
                 </div>
                 <div className='md:flex hidden space-x-3 md:space-x-6 text-md  py-2'>
                     <Link to="/">Home</Link>
