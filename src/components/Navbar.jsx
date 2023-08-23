@@ -34,8 +34,6 @@ function Navbar() {
                     <Link to="/card"><BsHandbagFill className='text-4xl' /></Link>
                     <button className='bg-black text-white px-6 p-1'>Login</button>
                 </div>
-          
-    
                 {display==='hidden'?   <GiHamburgerMenu className='text-3xl md:hidden block' onClick={clickHandle}/> : <MdOutlineClose      className='text-3xl md:hidden block' onClick={clickHandle}/>}
     
                 {/* mobile view */}
