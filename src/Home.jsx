@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import img1 from './assets/pexels-photo-1377034.jpeg'
-import Card from './components/Card'
+import AllCard from './components/AllCard';
 
 function Home() {
   const divStyle = {
@@ -45,7 +45,7 @@ function Home() {
             <h1 className='text-3xl mt-10 md:mt-16 ml-10 md:ml-20 font-bold'>SHOP FESTIVE FAVORITES</h1>
         </div>
     </div>
-    <Card/>
+    <AllCard/>
     </>
   )
 }
